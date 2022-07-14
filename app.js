@@ -7,8 +7,9 @@ app.set('view engine', 'ejs');
 
 //Routes List
 app.get('/', (req, res) => {
-//   res.send('Hello World!')
-  res.sendFile('./index.html', {root: __dirname})
+  //   res.send('Hello World!')
+  //  res.sendFile('./index.html', {root: __dirname})
+    res.render('index');
 })
 
 app.get('/about', (req, res) => {
