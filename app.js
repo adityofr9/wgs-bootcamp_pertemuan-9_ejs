@@ -2,14 +2,14 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+//Information using EJS
 app.set('view engine', 'ejs');
-
 
 //Routes List
 app.get('/', (req, res) => {
   //   res.send('Hello World!')
   //  res.sendFile('./index.html', {root: __dirname})
-    res.render('index');
+    res.render('index', {nama: "Muhammad Adityo Fathur Rahim"});
 })
 
 app.get('/about', (req, res) => {
